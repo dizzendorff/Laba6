@@ -1,9 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 360px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 header {
@@ -12,23 +24,23 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e0e0e0;
 }
 
 header .logo {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    color: #333;
 }
 
 header nav a {
     margin: 0 10px;
+    font-size: 14px;
     text-decoration: none;
     color: #666;
 }
 
 header nav a.active {
-    color: #ff6666;
+    color: #ff5252;
     font-weight: bold;
 }
 
@@ -36,65 +48,66 @@ main {
     padding: 20px;
 }
 
-.location {
-    font-size: 14px;
+.forecast .location {
+    font-size: 12px;
     color: #888;
     margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 24px;
+.forecast h1 {
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
 .week-forecast {
     display: flex;
-    justify-content: space-around;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: 15px;
 }
 
 .week-forecast .day {
-    text-align: center;
-    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.week-forecast .icon {
-    font-size: 24px;
-    margin: 10px 0;
+.week-forecast .day .icon {
+    font-size: 20px;
 }
 
 .today {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .today h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .time-period {
     display: flex;
-    justify-content: space-around;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: 15px;
 }
 
 .time-period .period {
-    text-align: center;
-    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
-    padding: 10px;
     font-size: 12px;
-    background-color: #fff;
     color: #888;
-    margin-top: 20px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #f9f9f9;
 }
