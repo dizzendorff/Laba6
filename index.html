@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода в Хабаровске</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>☂</span> METEO-GID
+        </div>
+        <nav>
+            <a href="#">Сейчас</a>
+            <a href="#" class="active">На неделю</a>
+            <a href="#">На месяц</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="forecast">
+            <div class="location">Россия / Хабаровский край / Хабаровск (городской округ)</div>
+            <h1>Погода в Хабаровске на неделю</h1>
+
+            <div class="week-forecast">
+                <div class="day">
+                    <p>Вс<br><span>30 нояб</span></p>
+                    <div class="icon">⛅</div>
+                    <p>Мин: -8°<br>Макс: -15°</p>
+                    <p>Облачно с прояснениями</p>
+                </div>
+                <div class="day">
+                    <p>Пн<br><span>1 дек</span></p>
+                    <div class="icon">☀</div>
+                    <p>Мин: -9°<br>Макс: -19°</p>
+                    <p>Малооблачно</p>
+                </div>
+                <!-- Повторить блок "day" для других дней -->
+            </div>
+        </section>
+
+        <section class="today">
+            <h2>Сегодня</h2>
+            <div class="time-period">
+                <div class="period">
+                    <p>Утром<br>-10°...-9°</p>
+                    <div class="icon">☀</div>
+                    <p>746 мм рт. ст.<br>74%</p>
+                </div>
+                <!-- Повторить блок "period" для других периодов -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2024–2024 ООО «МетеоГид»
+    </footer>
+</body>
+</html>
