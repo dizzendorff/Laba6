@@ -7,54 +7,99 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <span>☂</span> METEO-GID
-        </div>
-        <nav>
-            <a href="#">Сейчас</a>
-            <a href="#" class="active">На неделю</a>
-            <a href="#">На месяц</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="forecast">
-            <div class="location">Россия / Хабаровский край / Хабаровск (городской округ)</div>
-            <h1>Погода в Хабаровске на неделю</h1>
-
-            <div class="week-forecast">
-                <div class="day">
-                    <p>Вс<br><span>30 нояб</span></p>
-                    <div class="icon">⛅</div>
-                    <p>Мин: -8°<br>Макс: -15°</p>
-                    <p>Облачно с прояснениями</p>
-                </div>
-                <div class="day">
-                    <p>Пн<br><span>1 дек</span></p>
-                    <div class="icon">☀</div>
-                    <p>Мин: -9°<br>Макс: -19°</p>
-                    <p>Малооблачно</p>
-                </div>
-                <!-- Повторить блок "day" для других дней -->
+    <div class="container">
+        <header>
+            <div class="logo">
+                ☂ METEO-GID
             </div>
-        </section>
+            <nav>
+                <a href="#">Сейчас</a>
+                <a href="#" class="active">На неделю</a>
+                <a href="#">На месяц</a>
+            </nav>
+        </header>
 
-        <section class="today">
-            <h2>Сегодня</h2>
-            <div class="time-period">
-                <div class="period">
-                    <p>Утром<br>-10°...-9°</p>
-                    <div class="icon">☀</div>
-                    <p>746 мм рт. ст.<br>74%</p>
+        <main>
+            <section class="forecast">
+                <div class="location">Россия / Хабаровский край / Хабаровск (городской округ)</div>
+                <h1>Погода в Хабаровске на неделю</h1>
+
+                <div class="week-forecast">
+                    <div class="day">
+                        <p class="date">Вс<br><span>30 нояб</span></p>
+                        <div class="icon">⛅</div>
+                        <p class="temp">Мин: -8°<br>Макс: -15°</p>
+                        <p class="description">Облачно с прояснениями</p>
+                    </div>
+                    <div class="day">
+                        <p class="date">Пн<br><span>1 дек</span></p>
+                        <div class="icon">☀</div>
+                        <p class="temp">Мин: -9°<br>Макс: -19°</p>
+                        <p class="description">Малооблачно</p>
+                    </div>
+                    <div class="day">
+                        <p class="date">Вт<br><span>2 дек</span></p>
+                        <div class="icon">❄</div>
+                        <p class="temp">Мин: -9°<br>Макс: -19°</p>
+                        <p class="description">Снег</p>
+                    </div>
+                    <div class="day">
+                        <p class="date">Ср<br><span>3 дек</span></p>
+                        <div class="icon">❄</div>
+                        <p class="temp">Мин: -9°<br>Макс: -17°</p>
+                        <p class="description">Снег</p>
+                    </div>
+                    <div class="day">
+                        <p class="date">Чт<br><span>4 дек</span></p>
+                        <div class="icon">🌨</div>
+                        <p class="temp">Мин: -9°<br>Макс: -17°</p>
+                        <p class="description">Небольшой снег</p>
+                    </div>
+                    <div class="day">
+                        <p class="date">Пт<br><span>5 дек</span></p>
+                        <div class="icon">⛅</div>
+                        <p class="temp">Мин: -9°<br>Макс: -17°</p>
+                        <p class="description">Облачно с прояснениями</p>
+                    </div>
+                    <div class="day">
+                        <p class="date">Сб<br><span>6 дек</span></p>
+                        <div class="icon">☀</div>
+                        <p class="temp">Мин: -9°<br>Макс: -17°</p>
+                        <p class="description">Солнечно</p>
+                    </div>
                 </div>
-                <!-- Повторить блок "period" для других периодов -->
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <footer>
-        © 2024–2024 ООО «МетеоГид»
-    </footer>
+            <section class="today">
+                <h2>Сегодня</h2>
+                <div class="time-period">
+                    <div class="period">
+                        <p>Утром<br>-10°...-9°</p>
+                        <div class="icon">☀</div>
+                        <p>746 мм рт. ст.<br>74%</p>
+                    </div>
+                    <div class="period">
+                        <p>Днем<br>-10°...-8°</p>
+                        <div class="icon">☀</div>
+                        <p>749 мм рт. ст.<br>65%</p>
+                    </div>
+                    <div class="period">
+                        <p>Вечером<br>-12°...-11°</p>
+                        <div class="icon">⛅</div>
+                        <p>751 мм рт. ст.<br>70%</p>
+                    </div>
+                    <div class="period">
+                        <p>Ночью<br>-15°...-13°</p>
+                        <div class="icon">☁</div>
+                        <p>752 мм рт. ст.<br>74%</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © 2024–2024 ООО «МетеоГид»
+        </footer>
+    </div>
 </body>
 </html>
